@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Security Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="quiz.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Self-Assessment: Web Security Quiz</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="encryption.html">Encryption</a>
+    <a href="network.html">Network Security</a>
+    <a href="references.html">References</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <main>
+    <form id="quizForm">
+      <p>1. Which encryption type uses the same key for both encryption and decryption?</p>
+      <label><input type="radio" name="q1" value="1"> Symmetric Encryption</label><br>
+      <label><input type="radio" name="q1" value="0"> Asymmetric Encryption</label><br>
+      <label><input type="radio" name="q1" value="0"> Hashing</label><br>
+
+      <p>2. Fill in the blank: The two keys used in asymmetric encryption are the _____ key and the private key.</p>
+      <input type="text" name="q2"><br>
+
+      <p>3. Which of the following are network security tools? (Select all that apply)</p>
+      <label><input type="checkbox" name="q3" value="firewall"> Firewall</label><br>
+      <label><input type="checkbox" name="q3" value="antivirus"> Antivirus</label><br>
+      <label><input type="checkbox" name="q3" value="encryption"> Encryption</label><br>
+      <label><input type="checkbox" name="q3" value="compiler"> Compiler</label><br>
+
+      <p>4. What is the main purpose of encryption in web security?</p>
+      <select name="q4">
+        <option value="">--Select--</option>
+        <option value="data-protection">To protect data from unauthorized access</option>
+        <option value="speed">To increase connection speed</option>
+        <option value="authentication">To block user logins</option>
+      </select><br>
+
+      <p>5. Which of the following best describes asymmetric encryption?</p>
+      <label><input type="radio" name="q5" value="1"> It uses a public key and a private key</label><br>
+      <label><input type="radio" name="q5" value="0"> It uses the same key for both actions</label><br>
+      <label><input type="radio" name="q5" value="0"> It converts code into machine instructions</label><br>
+
+      <p>6. Which protocol secures web traffic by encrypting communication between browser and server?</p>
+      <label><input type="radio" name="q6" value="1"> HTTPS</label><br>
+      <label><input type="radio" name="q6" value="0"> HTTP</label><br>
+      <label><input type="radio" name="q6" value="0"> FTP</label><br>
+
+      <p>7. Fill in the blank: A firewall is a ________ that filters incoming and outgoing traffic.</p>
+      <input type="text" name="q7"><br>
+
+      <p>8. Which of the following are types of firewalls? (Select all that apply)</p>
+      <label><input type="checkbox" name="q8" value="packet"> Packet Filtering</label><br>
+      <label><input type="checkbox" name="q8" value="stateful"> Stateful Inspection</label><br>
+      <label><input type="checkbox" name="q8" value="ssl"> SSL Certificate</label><br>
+      <label><input type="checkbox" name="q8" value="proxy"> Proxy Firewall</label><br>
+
+      <p>9. Which one is faster in encryption: symmetric or asymmetric?</p>
+      <label><input type="radio" name="q9" value="1"> Symmetric</label><br>
+      <label><input type="radio" name="q9" value="0"> Asymmetric</label><br>
+      <label><input type="radio" name="q9" value="0"> Both are equal</label><br>
+
+      <p>10. What kind of attacks do firewalls help prevent?</p>
+      <label><input type="radio" name="q10" value="1"> Unauthorized access</label><br>
+      <label><input type="radio" name="q10" value="0"> Data formatting errors</label><br>
+      <label><input type="radio" name="q10" value="0"> Programming bugs</label><br>
+
+      <br>
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+      <button type="button" onclick="resetQuiz()">Restart Quiz</button>
+    </form>
+
+    <div id="result" style="margin-top:20px;"></div>
+  </main>
+
+  <footer>
+    <p>This is a class project for IT 3203. Visit the course site: 
+      <a href="https://ksuweb.github.io/IT3203/" target="_blank">https://ksuweb.github.io/IT3203/</a>
+    </p>
+  </footer>
+</body>
+</html>
