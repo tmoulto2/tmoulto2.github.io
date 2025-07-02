@@ -1,3 +1,4 @@
+// This function is called when the user clicks the "Submit Quiz" button
 function submitQuiz() {
   let score = 0;
   const result = document.getElementById("result");
@@ -52,11 +53,13 @@ function submitQuiz() {
   // Final Result
   const total = 10;
   result.innerHTML += `<h2>Your Score: ${score} / ${total}</h2>`;
+
+  // Display pass/fail based on score threshold
   result.innerHTML += (score >= 7)
     ? `<p style="color:green;">✅ You passed!</p>`
     : `<p style="color:red;">❌ You did not pass. Please review the materials and try again.</p>`;
 }
-
+// This function resets the quiz form and result display
 function resetQuiz() {
   document.getElementById("quizForm").reset();
   document.getElementById("result").innerHTML = "";
