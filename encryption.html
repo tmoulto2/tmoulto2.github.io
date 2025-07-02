@@ -33,23 +33,44 @@
 
     <!-- Table comparing encryption types -->
     <h2>Encryption Comparison</h2>
-    <table>
-      <tr>
-        <th>Type</th>
-        <th>Key Used</th>
-        <th>Speed</th>
-      </tr>
-      <tr>
-        <td>Symmetric</td>
-        <td>Same key</td>
-        <td>Fast</td>
-      </tr>
-      <tr>
-        <td>Asymmetric</td>
-        <td>Public & Private keys</td>
-        <td>Slower</td>
-      </tr>
-    </table>
+<table>
+  <tr>
+    <th>Feature</th>
+    <th>Symmetric Encryption</th>
+    <th>Asymmetric Encryption</th>
+  </tr>
+  <tr>
+    <td>Key Used</td>
+    <td>Same key for encryption and decryption</td>
+    <td>Public key for encryption, private key for decryption</td>
+  </tr>
+  <tr>
+    <td>Speed</td>
+    <td>Faster</td>
+    <td>Slower</td>
+  </tr>
+  <tr>
+    <td>Security</td>
+    <td>Less secure if key is intercepted</td>
+    <td>More secure due to key separation</td>
+  </tr>
+  <tr>
+    <td>Use Cases</td>
+    <td>Encrypting files, disk storage, VPN traffic</td>
+    <td>Email encryption, digital signatures, SSL/TLS</td>
+  </tr>
+  <tr>
+    <td>Common Algorithms</td>
+    <td>AES, DES, Blowfish</td>
+    <td>RSA, ECC, DSA</td>
+  </tr>
+  <tr>
+    <td>Key Length</td>
+    <td>Typically 128–256 bits</td>
+    <td>Typically 1024–4096 bits</td>
+  </tr>
+</table>
+
 
     <!-- Visual diagram of symmetric vs. asymmetric -->
     <img src="images/Symmetric-and-asymmetric-encryption-3.png" alt="Symmetric and Asymmetric Encryption Methods" width="500">
