@@ -186,3 +186,22 @@ img {
   }
 }
 
+/* Tablet view improvements (portrait and landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  input[type="radio"],
+  input[type="checkbox"],
+  select,
+  button,
+  label {
+    font-size: 1rem; /* Ensure larger text for form labels/options */
+  }
+
+  form {
+    padding: 0 20px;
+  }
+
+  table, th, td {
+    font-size: 1rem; /* Improve table readability */
+  }
+}
+
