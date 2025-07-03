@@ -68,14 +68,121 @@ img {
   color: #0056b3;
 }
 
-/* Makes layout mobile-friendly on smaller screens */
-@media (max-width: 600px) {
+/* ========= MEDIA QUERIES ========= */
+
+@media (max-width: 767px) {
+  /* Adjust nav layout for vertical stacking on small screens */
   nav {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Decrease font size for table elements to fit smaller screens */
   table, th, td {
     font-size: 0.9rem;
   }
+
+  /* Add horizontal padding to the quiz form to prevent edge collisions */
+  form {
+    padding: 0 10px;
+  }
+
+  /* Make all text inputs, dropdowns, textareas, and buttons full width */
+  input[type="text"],
+  select,
+  textarea,
+  button {
+    width: 100%;
+    margin-bottom: 10px; /* Adds space between controls for touch-friendliness */
+    font-size: 1rem; /* Improves readability on small screens */
+  }
+
+  /* Display each label on a new line with spacing */
+  label {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  /* Ensure quiz result messages are readable on smaller screens */
+  #result {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
 }
+
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    gap: 40px;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  table {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small screens (phones, under 768px) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header, footer {
+    padding: 10px;
+  }
+
+  table, th, td {
+    font-size: 0.85rem;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    border: none;
+  }
+
+  th, td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  input, select, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+}
+
