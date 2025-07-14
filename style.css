@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Header and Footer */
@@ -21,14 +22,19 @@ nav {
   background-color: #ddd;
   padding: 10px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
+  background-color: #b0c4de;
   color: darkblue;
   font-weight: bold;
 }
@@ -38,6 +44,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
+  font-size: 1rem;
 }
 
 table, th, td {
@@ -53,6 +60,8 @@ th, td {
 img {
   display: block;
   margin: 20px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Custom Class Example */
@@ -60,6 +69,31 @@ img {
   border: 1px solid #ccc;
   padding: 15px;
   margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003d80;
+}
+
+/* Input Fields */
+input[type="text"], select, textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 /* ID Selector Example */
@@ -68,79 +102,14 @@ img {
   color: #0056b3;
 }
 
+/* Result Area */
+#result {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
 /* ========= MEDIA QUERIES ========= */
-
-@media (max-width: 767px) {
-  /* Adjust nav layout for vertical stacking on small screens */
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Decrease font size for table elements to fit smaller screens */
-  table, th, td {
-    font-size: 0.9rem;
-  }
-
-  /* Add horizontal padding to the quiz form to prevent edge collisions */
-  form {
-    padding: 0 10px;
-  }
-
-  /* Make all text inputs, dropdowns, textareas, and buttons full width */
-  input[type="text"],
-  select,
-  textarea,
-  button {
-    width: 100%;
-    margin-bottom: 10px; /* Adds space between controls for touch-friendliness */
-    font-size: 1rem; /* Improves readability on small screens */
-  }
-
-  /* Display each label on a new line with spacing */
-  label {
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  /* Ensure quiz result messages are readable on smaller screens */
-  #result {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-}
-
-
-/* Large screens (1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    font-size: 1.1rem;
-  }
-
-  nav {
-    gap: 40px;
-  }
-
-  table {
-    font-size: 1rem;
-  }
-}
-
-/* Medium screens (768px to 1199px) */
-@media (max-width: 1199px) and (min-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  table {
-    font-size: 0.95rem;
-  }
-}
 
 /* Small screens (phones, under 768px) */
 @media (max-width: 767px) {
@@ -170,9 +139,8 @@ img {
     border-bottom: 1px solid #ccc;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  form {
+    padding: 0 10px;
   }
 
   input, select, textarea, button {
@@ -181,10 +149,44 @@ img {
     font-size: 1rem;
   }
 
-  form {
+  label {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  #result {
+    font-size: 1rem;
     padding: 0 10px;
   }
 }
 
+/* Medium screens (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 1rem;
+  }
 
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
+  table {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    gap: 40px;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+}
