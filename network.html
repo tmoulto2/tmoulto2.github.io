@@ -20,7 +20,9 @@
 
   <main>
     <!-- Overview of network security -->
-    <p>Network security involves protecting data and systems from unauthorized access, disruptions, or misuse. It uses both hardware and software solutions to maintain secure and reliable communication.</p>
+    <section>
+      <p>Network security involves protecting data and systems from unauthorized access, disruptions, or misuse. It uses both hardware and software solutions to maintain secure and reliable communication.</p>
+    </section>
 
     <!-- Threats -->
     <section>
@@ -34,68 +36,74 @@
       </ul>
     </section>
     
-    <!-- Ordered list of network protection techniques -->
-    <h2>Common Network Security Measures</h2>
+    <!-- Network Security Measures -->
+    <section>
+      <h2>Common Network Security Measures</h2>
+      <ol>
+        <li><strong>Firewalls:</strong><br>
+          Act as a barrier between trusted internal networks and untrusted external networks. They filter traffic based on security rules to block unauthorized access.
+        </li>
+        <li><strong>Antivirus:</strong><br>
+          Scans and removes malicious software such as viruses and worms. Provides real-time protection and threat detection for endpoints.
+        </li>
+        <li><strong>Intrusion Detection Systems (IDS):</strong><br>
+          Monitors systems and network traffic to detect suspicious activity or policy violations, alerting administrators to potential threats.
+        </li>
+        <li><strong>Virtual Private Network (VPN):</strong><br>
+          Encrypts user internet traffic and routes it through a secure server, ensuring privacy and safe remote access.
+        </li>
+      </ol>
+    </section>
 
-<ol>
-  <li><strong>Firewalls</strong><br>
-    Firewalls act as a barrier between trusted internal networks and untrusted external networks, such as the internet. They monitor and control incoming and outgoing network traffic based on predefined security rules. By blocking unauthorized access while permitting legitimate communication, firewalls serve as a critical line of defense in network security.
-  </li>
+    <!-- Firewall types -->
+    <section>
+      <h2>Firewall Types</h2>
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Packet Filtering Firewall</td>
+          <td>Examines packets and blocks them based on source/destination IP addresses, ports, or protocols.</td>
+        </tr>
+        <tr>
+          <td>Stateful Inspection Firewall</td>
+          <td>Tracks active connections and filters packets based on the context and state of the traffic.</td>
+        </tr>
+        <tr>
+          <td>Proxy Firewall</td>
+          <td>Acts as an intermediary, filtering traffic at the application layer for added protection.</td>
+        </tr>
+        <tr>
+          <td>Next-Generation Firewall (NGFW)</td>
+          <td>Includes advanced features like deep packet inspection, intrusion prevention, and application-level monitoring.</td>
+        </tr>
+      </table>
+    </section>
 
-  <li><strong>Antivirus</strong><br>
-    Antivirus software scans, detects, and removes malicious software (malware) such as viruses, worms, and trojans. It helps prevent malware from infecting endpoints and provides real-time protection against emerging threats.
-  </li>
-
-  <li><strong>Intrusion Detection Systems (IDS)</strong><br>
-    IDS tools monitor network or system activities for malicious behavior or policy violations. They alert administrators of potential intrusions or unauthorized access attempts, allowing swift response to threats.
-  </li>
-
-  <li><strong>Virtual Private Network (VPN)</strong><br>
-    A VPN encrypts your internet traffic and routes it through a secure server, providing anonymity and protecting sensitive data during online communication. It’s commonly used to secure remote connections and prevent eavesdropping.
-  </li>
-</ol>
-
-
-     <!-- Table of firewall types -->
-    <h2>Firewall Types</h2>
-<table>
-  <tr>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Packet Filtering Firewall</td>
-    <td>Examines packets and blocks them based on source and destination IP addresses, ports, or protocols.</td>
-  </tr>
-  <tr>
-    <td>Stateful Inspection Firewall</td>
-    <td>Tracks the state of active connections and makes decisions based on the context of traffic.</td>
-  </tr>
-  <tr>
-    <td>Proxy Firewall</td>
-    <td>Acts as an intermediary between internal devices and the internet, filtering traffic at the application layer.</td>
-  </tr>
-  <tr>
-    <td>Next-Generation Firewall (NGFW)</td>
-    <td>Combines traditional firewall features with advanced functionalities like intrusion prevention, deep packet inspection, and application awareness.</td>
-  </tr>
-  <tr>
-</table>
-
-<!-- Best Practices -->
+    <!-- Best Practices -->
     <section>
       <h2>Best Practices for Securing Networks</h2>
       <ul>
         <li>Implement strong password policies and multi-factor authentication.</li>
-        <li>Segment the network to limit internal access and reduce risk.</li>
-        <li>Educate users about phishing and social engineering tactics.</li>
-        <li>Use endpoint protection tools on all user devices.</li>
-        <li>Back up critical data regularly to recover from attacks.</li>
+        <li>Segment networks to isolate traffic and limit access.</li>
+        <li>Train users to recognize phishing and social engineering attacks.</li>
+        <li>Use endpoint protection across all connected devices.</li>
+        <li>Maintain regular backups and disaster recovery plans.</li>
       </ul>
     </section>
 
-    <!-- Diagram image for firewall categories -->
-    <img src="images/types-of-firewalls.webp" alt="Types of Firewalls" width="500">
+    <!-- Diagram -->
+    <section>
+      <h2>Visual Diagram: Types of Firewalls</h2>
+      <img src="images/types-of-firewalls.webp" alt="Types of Firewalls" width="500">
+    </section>
+
+    <!-- Conclusion -->
+    <section>
+      <p>Network security is essential in protecting modern digital infrastructure. Understanding threats, implementing protective technologies, and following best practices are key to maintaining a secure and resilient environment.</p>
+    </section>
   </main>
 
   <footer>
